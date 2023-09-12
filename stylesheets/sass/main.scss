@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// 1. utilities: Sass tools and helpers used throughout the project.
+@import
+  'utilities/variables',
+  'utilities/functions',
+  'utilities/mixins',
+  'utilities/placeholders';
+
+// 2. vendors: Includes all CSS files from external libraries and frameworks.
+
+
+// 3. base: Base stuff
+@import
+  'base/base',
+  'base/reset',
+  'base/typography',
+  'base/animations';
+
+// 4. layouts: Everything concerning the layout of the site.
+@import
+  'layouts/navigation',
+  'layouts/header',
+  'layouts/footer',
+  'layouts/sidebar',
+  'layouts/forms';
+
+// 5. components: Components
+@import
+  'components/buttons',
+  'components/media';
+
+// 6. pages: Page-specific styles.
+@import
+  'pages/homes',
+  'pages/contact',
+  'pages/restaurant';
+
+// 7. themes: All themes files.
+@import
+  'themes/theme';
