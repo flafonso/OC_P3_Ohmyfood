@@ -3,6 +3,7 @@
 // 1. utilities: Sass tools and helpers used throughout the project.
 @import
   'utilities/variables',
+  'utilities/colors',
   'utilities/functions',
   'utilities/mixins',
   'utilities/placeholders';
@@ -14,6 +15,7 @@
 @import
   'base/base',
   'base/reset',
+  'base/font-face',
   'base/typography',
   'base/animations';
 
