@@ -1,9 +1,18 @@
 * {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 30px;
 }
 
 .title {
-  font-family: 'Shrikhand';
-  font-size: 30px;
-  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: lighter;
 }
