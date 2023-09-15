@@ -78,3 +78,18 @@
     }
   }
 }
+
+
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  a {
+    max-width: 370px;
+  }
+  .card {
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}

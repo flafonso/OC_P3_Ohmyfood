@@ -189,3 +189,15 @@ footer a {
   margin-left: 30px;
   color: #7E7E7E;
 }
+
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-cards a {
+  max-width: 370px;
+}
+.restaurant-cards .card img {
+  height: 200px;
+  object-fit: cover;
+}
