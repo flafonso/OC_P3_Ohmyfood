@@ -5,6 +5,9 @@
 .main-title {
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
+  &--footer {
+    font-size: 18px;
+  }
 }
 
 .title {
@@ -14,5 +17,9 @@
 
 .subtitle {
   font-size: 18px;
+  font-weight: lighter;
+}
+
+.indications a {
   font-weight: lighter;
 }
