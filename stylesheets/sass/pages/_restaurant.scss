@@ -1,0 +1,32 @@
+.restaurant__image {
+  // position: absolute;
+  // right: 0px;
+  // left: 0px;
+  // z-index: -1;
+  height: 275px;
+  width: 100%;
+  img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  position: relative;
+  top: -55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: $main-bg-color;
+  border-radius: 40px 40px 0px 0px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__starters {}
+  &__dishes {}
+  &__desserts {}
+}
