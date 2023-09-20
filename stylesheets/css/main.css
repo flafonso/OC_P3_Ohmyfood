@@ -155,12 +155,24 @@ footer a {
 .card__new--visible {
   display: inline;
 }
+.card--dish {
+  height: 70px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.3));
+}
+.card__price {
+  font-size: 15px;
+  font-weight: bold;
+}
 
 .card__content {
   padding: 10px 20px 20px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card__content--dish {
+  padding: 15px;
+  align-items: flex-end;
 }
 
 .card__txt {
@@ -174,6 +186,15 @@ footer a {
 .card__txt p {
   font-size: 17px;
   font-weight: lighter;
+}
+.card__txt--dish {
+  gap: unset;
+}
+.card__txt--dish h3 {
+  font-weight: normal;
+}
+.card__txt--dish p {
+  font-size: 15px;
 }
 
 .location {
@@ -273,6 +294,10 @@ footer a {
 }
 
 .restaurant__image {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
   height: 275px;
   width: 100%;
 }
@@ -283,16 +308,16 @@ footer a {
 }
 
 .menu {
-  position: relative;
-  top: -55px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 220px;
+  padding: 40px 13px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
 }
 .menu__header {
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

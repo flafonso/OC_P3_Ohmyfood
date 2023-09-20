@@ -1,8 +1,8 @@
 .restaurant__image {
-  // position: absolute;
-  // right: 0px;
-  // left: 0px;
-  // z-index: -1;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
   height: 275px;
   width: 100%;
   img {
@@ -12,16 +12,17 @@
   }
 }
 
+
 .menu {
-  position: relative;
-  top: -55px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 220px;
+  padding: 40px 13px;
   display: flex;
   flex-direction: column;
+  gap: 40px;
   background-color: $main-bg-color;
   border-radius: 40px 40px 0px 0px;
   &__header {
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
