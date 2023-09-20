@@ -21,6 +21,20 @@
 .subtitle {
   font-size: 18px;
   font-weight: lighter;
+  &--menu-section {
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 8px;
+    &::after {
+      content: "";
+      background: $tertiary-color;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      height: 3px;
+      width: 40px;
+    }
+  }
 }
 
 .indications a {

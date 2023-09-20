@@ -49,6 +49,20 @@ section {
   font-size: 18px;
   font-weight: lighter;
 }
+.subtitle--menu-section {
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.subtitle--menu-section::after {
+  content: "";
+  background: #99E2D0;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 3px;
+  width: 40px;
+}
 
 .indications a {
   font-weight: lighter;
@@ -311,14 +325,22 @@ footer a {
   margin-top: 220px;
   padding: 40px 13px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 40px;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
 }
 .menu__header {
+  align-self: stretch;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.menu__section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

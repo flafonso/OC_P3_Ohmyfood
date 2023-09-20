@@ -17,17 +17,22 @@
   margin-top: 220px;
   padding: 40px 13px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 40px;
   background-color: $main-bg-color;
   border-radius: 40px 40px 0px 0px;
   &__header {
+    align-self: stretch;
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__starters {}
-  &__dishes {}
-  &__desserts {}
+  &__section {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
