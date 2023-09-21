@@ -45,7 +45,7 @@ body {
     align-items: center;
   }
   &__section {
-    align-self: stretch;
+    width: clamp(0px, 95vw, 634px);
     display: flex;
     flex-direction: column;
     gap: 12px;

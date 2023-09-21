@@ -433,7 +433,7 @@ footer a {
   align-items: center;
 }
 .menu__section {
-  align-self: stretch;
+  width: clamp(0px, 95vw, 634px);
   display: flex;
   flex-direction: column;
   gap: 12px;
