@@ -11,6 +11,9 @@
   &--footer {
     font-size: 18px;
   }
+  @include md {
+    font-size: 34px;
+  }
 }
 
 .title {

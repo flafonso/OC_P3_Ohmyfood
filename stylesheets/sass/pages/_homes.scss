@@ -88,6 +88,11 @@
       color: #7E7E7E;
     }
   }
+  &--logo-purple {
+    svg path {
+      fill: $primary-color;
+    }
+  }
 }
 
 .restaurants {
