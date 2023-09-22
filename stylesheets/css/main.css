@@ -43,6 +43,7 @@ section {
 }
 .container--restaurants {
   margin-top: 220px;
+  transition: all 1000ms;
 }
 @media (min-width: 768px) {
   .container--restaurants {
@@ -202,10 +203,14 @@ footer a {
 .btn-blank__like {
   width: 22px;
   height: 21px;
+  cursor: help;
 }
 .btn-blank__like svg {
   width: inherit;
   height: inherit;
+}
+.btn-blank__like:active svg path {
+  fill: red;
 }
 .btn-blank__back {
   position: absolute;
@@ -374,7 +379,7 @@ footer a {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
@@ -440,6 +445,7 @@ footer a {
   height: 275px;
   width: 100%;
   object-fit: cover;
+  transition: all 1000ms;
 }
 @media (min-width: 768px) {
   .restaurant__image {

@@ -17,6 +17,7 @@ body {
     height: 275px;
     width: 100%;
     object-fit: cover;
+    transition: all 1000ms;
   }
   @include md {
     height: 383px;

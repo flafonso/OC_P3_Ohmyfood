@@ -43,6 +43,7 @@ section {
   }
   &--restaurants {
     margin-top: 220px;
+    transition: all 1000ms;
     @include md {
       display: flex;
       justify-content: center;

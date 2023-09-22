@@ -18,9 +18,15 @@
   &__like {
     width: 22px;
     height: 21px;
+    cursor:help;
     svg {
       width:inherit;
       height: inherit;
+    }
+    &:active {
+      svg path {
+       fill: red; 
+      }
     }
   }
   &__back {
