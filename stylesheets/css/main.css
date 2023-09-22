@@ -51,7 +51,6 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 343px;
-    transition: all 1000ms;
   }
 }
 
@@ -466,7 +465,6 @@ footer a {
 }
 
 .menu {
-  margin-top: 220px;
   padding: 40px 13px;
   display: flex;
   align-items: center;
