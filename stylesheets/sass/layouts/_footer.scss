@@ -11,12 +11,24 @@ footer {
   a {
     width: fit-content;
   }
+  @include md {
+    height: 144px;
+    padding-right: 65px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: unset;
+    gap: 90px;
+  }
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  @include md {
+    flex-direction: row;
+    gap: 45px;
+  }
 }
 
 .partnership {
@@ -28,10 +40,18 @@ footer {
     height: 13px;
     margin-right: 10px;
   }
+  @include md {
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 .indications {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  @include md {
+    flex-direction: row;
+    gap: 15px;
+  }
 }

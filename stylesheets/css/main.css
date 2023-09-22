@@ -124,11 +124,27 @@ footer {
 footer a {
   width: fit-content;
 }
+@media (min-width: 768px) {
+  footer {
+    height: 144px;
+    padding-right: 65px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: unset;
+    gap: 90px;
+  }
+}
 
 .footer-content {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    gap: 45px;
+  }
 }
 
 .partnership {
@@ -141,11 +157,23 @@ footer a {
   height: 13px;
   margin-right: 10px;
 }
+@media (min-width: 768px) {
+  .partnership {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
 
 .indications {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 768px) {
+  .indications {
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 .btn__main {
