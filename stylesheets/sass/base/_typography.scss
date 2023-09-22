@@ -5,14 +5,14 @@
 .main__title {
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
+  @include md {
+    font-size: 34px;
+  }
   &--menu {
     font-size: 28px;
   }
   &--footer {
     font-size: 18px;
-  }
-  @include md {
-    font-size: 34px;
   }
 }
 

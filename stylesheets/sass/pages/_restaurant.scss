@@ -8,11 +8,13 @@ body {
 
 .restaurant__image {
   position: absolute;
+  top: 63px;          //To be positioned just below the header
   right: 0px;
   left: 0px;
   z-index: -1;
   height: 275px;
   width: 100%;
+  transition: all 1000ms;
   img {
     height: 275px;
     width: 100%;
@@ -21,7 +23,7 @@ body {
   }
   @include md {
     height: 383px;
-    top: 96px;
+    transform: translateY(33px);  //To follow the header transition, from height 63px to 96px
     img {
       height: 383px;
     }
