@@ -23,7 +23,6 @@ a {
 section {
   padding-right: 20px;
   padding-left: 20px;
-  transition: all 450ms;
 }
 @media (min-width: 768px) {
   section {
@@ -185,6 +184,7 @@ footer a {
 }
 
 .btn__main {
+  position: relative;
   margin: 15px;
   width: 218px;
   height: 50px;
@@ -194,6 +194,28 @@ footer a {
   border-radius: 25px;
   background: linear-gradient(-5deg, rgb(147, 86, 220) 5%, rgb(255, 121, 218) 95%);
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+.btn__main:hover {
+  border-radius: 25px;
+  filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.3));
+}
+.btn__main:hover::after {
+  border-radius: 25px;
+  opacity: 0.13;
+}
+.btn__main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: white;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .btn-blank {
