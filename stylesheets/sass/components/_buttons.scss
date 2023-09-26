@@ -39,18 +39,22 @@
   cursor: pointer;
   padding: 0;
   &__like {
-    width: 22px;
-    height: 21px;
-    cursor:help;
+    width: fit-content;
+    position: relative;
+    z-index: 4;
     svg {
-      width:inherit;
-      height: inherit;
-    }
-    &:active {
-      svg path {
-       fill: red; 
+      width: 22px;
+      height: 21px;
+      stroke: black;
+      fill: none;
+      use {
+        pointer-events: visible;
+        &:active {
+          fill: red;
+        }
       }
     }
+
   }
   &__back {
     position: absolute;
@@ -62,4 +66,3 @@
     }
   }
 }
-

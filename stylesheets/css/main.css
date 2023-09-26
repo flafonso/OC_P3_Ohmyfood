@@ -225,15 +225,20 @@ footer a {
   padding: 0;
 }
 .btn-blank__like {
-  width: 22px;
-  height: 21px;
-  cursor: help;
+  width: fit-content;
+  position: relative;
+  z-index: 4;
 }
 .btn-blank__like svg {
-  width: inherit;
-  height: inherit;
+  width: 22px;
+  height: 21px;
+  stroke: black;
+  fill: none;
 }
-.btn-blank__like:active svg path {
+.btn-blank__like svg use {
+  pointer-events: visible;
+}
+.btn-blank__like svg use:active {
   fill: red;
 }
 .btn-blank__back {
@@ -432,8 +437,16 @@ footer a {
   gap: 20px;
   transition: all 450ms;
 }
-.restaurants__cards a {
+.restaurants__cards .card {
   width: 100%;
+}
+.restaurants__cards .card--clickable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .restaurants__cards {
@@ -442,7 +455,7 @@ footer a {
     flex-wrap: wrap;
     gap: 50px clamp(50px, 9.3%, 100px);
   }
-  .restaurants__cards a {
+  .restaurants__cards .card {
     flex: 1 1 43%;
   }
 }
