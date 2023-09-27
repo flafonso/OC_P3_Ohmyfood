@@ -218,59 +218,67 @@ footer a {
   transition: opacity 250ms;
 }
 
-.btn-blank {
-  background: none;
-  border: none;
-  cursor: pointer;
+.btn {
   padding: 0;
 }
-.btn-blank__like {
-  width: fit-content;
+.btn__like {
+  width: 22px;
+  height: 21px;
   position: relative;
+  overflow: hidden;
+  clip-path: url(../../images/button/heart.svg#heart-clip);
+  z-index: 2;
+}
+.btn__like--tick {
+  margin: 0;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   z-index: 4;
 }
-.btn-blank__like svg {
+.btn__like--tick + .fill {
+  width: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(50%);
+  aspect-ratio: 1/1;
+  transition: transform 1.2s cubic-bezier(0.2, 0.6, 0.8, 0.4);
+}
+.btn__like--tick:checked + .fill {
+  transform: translateY(0);
+}
+.btn__like .heart-stroke {
   width: 22px;
   height: 21px;
   stroke: black;
-  fill: url(../../images/button/heart.svg#my-linear-gradient) red;
-  fill-opacity: 0;
+  stroke-width: 2px;
+  fill: transparent;
 }
-.btn-blank__like svg use {
-  width: 22px;
-  height: 21px;
-  pointer-events: visible;
-  animation: progressive-filling 400ms forwards infinite;
-  animation-play-state: paused;
-}
-.btn-blank__like svg use:active {
-  animation-play-state: running;
-}
-.btn-blank__back {
+.btn__back {
   position: absolute;
   left: 23px;
   color: #353535;
 }
-.btn-blank__back svg {
+.btn__back svg {
   width: 17px;
   height: 16px;
 }
 
-@keyframes progressive-filling {
+.wave use {
+  animation: wave-movements 450ms linear infinite;
+}
+
+@keyframes wave-movements {
   0% {
-    fill-opacity: 0;
-  }
-  17% {
-    fill-opacity: 0.18;
-  }
-  24% {
-    fill-opacity: 0.4;
-  }
-  46% {
-    fill-opacity: 0.81;
+    transform: translateX(0);
   }
   100% {
-    fill-opacity: 1;
+    transform: translateX(-50%);
   }
 }
 .card {

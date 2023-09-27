@@ -13,9 +13,9 @@
   </head>
   <body>
     <header>
-      <button type="button" class="btn-blank btn-blank__back" onclick="window.location.href='../index.html'">
+      <a type="button" class="btn btn__back" href="../index.html">
         <i class="fa-solid fa-arrow-left"></i>
-      </button>
+      </a>
       <p class="main__title">ohmyfood</p>
     </header>
     
@@ -27,11 +27,17 @@
       <section class="menu">
         <div class="menu__header">
           <p class="main__title main__title--menu">La note enchantée</p>
-          <button type="button" class="btn-blank btn-blank__like">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+          <div class="btn btn__like">
+            <svg class="heart-stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
               <use  xlink:href="../images/button/heart.svg#heart"/>
             </svg>
-          </button>
+            <input type='checkbox' class='btn__like--tick'>
+            <div class="fill">
+              <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" xml:space="preserve">
+                <use  xlink:href="../images/button/heart.svg#wave"/>
+              </svg>
+            </div>
+          </div>
         </div>
   
         <div class="menu__section">
