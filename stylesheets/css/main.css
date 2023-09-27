@@ -233,13 +233,18 @@ footer a {
   width: 22px;
   height: 21px;
   stroke: black;
-  fill: none;
+  fill: url(../../images/button/heart.svg#my-linear-gradient) red;
+  fill-opacity: 0;
 }
 .btn-blank__like svg use {
+  width: 22px;
+  height: 21px;
   pointer-events: visible;
+  animation: progressive-filling 400ms forwards infinite;
+  animation-play-state: paused;
 }
 .btn-blank__like svg use:active {
-  fill: red;
+  animation-play-state: running;
 }
 .btn-blank__back {
   position: absolute;
@@ -251,6 +256,23 @@ footer a {
   height: 16px;
 }
 
+@keyframes progressive-filling {
+  0% {
+    fill-opacity: 0;
+  }
+  17% {
+    fill-opacity: 0.18;
+  }
+  24% {
+    fill-opacity: 0.4;
+  }
+  46% {
+    fill-opacity: 0.81;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
 .card {
   width: 100%;
   background-color: white;

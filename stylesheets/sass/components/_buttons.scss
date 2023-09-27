@@ -46,16 +46,23 @@
       width: 22px;
       height: 21px;
       stroke: black;
-      fill: none;
+      fill: url(../../images/button/heart.svg#my-linear-gradient) red;
+      fill-opacity: 0;
       use {
+        width: 22px;
+        height: 21px;
         pointer-events: visible;
+        // transition: fill-opacity 450ms ease-in-out;
+        animation: progressive-filling 400ms forwards infinite;
+        animation-play-state: paused;
         &:active {
-          fill: red;
+          // fill-opacity: 1;
+          animation-play-state: running;
+          }
         }
       }
     }
 
-  }
   &__back {
     position: absolute;
     left: 23px;
@@ -64,5 +71,24 @@
       width: 17px;
       height: 16px;
     }
+  }
+}
+
+
+@keyframes progressive-filling {
+  0% {
+    fill-opacity:0;
+  }
+  17% {
+    fill-opacity: .18;
+  }   
+  24% {
+    fill-opacity: .4;
+  }
+  46% {
+    fill-opacity: .81;
+  }
+  100% {
+    fill-opacity: 1;
   }
 }
