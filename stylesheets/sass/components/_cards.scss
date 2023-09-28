@@ -32,6 +32,9 @@
       transform: translateX(-60px);
       // animation: check-dish 300ms ease-in-out forwards;
     }
+    &:hover .card__price {
+      transform: translateX(-60px);
+    }
     &::after {
       content: "";
       width: 60px;
@@ -51,6 +54,7 @@
   &__price {
     font-size: 15px;
     font-weight: bold;
+    transition: transform 300ms ease-in-out;
   }
 }
 

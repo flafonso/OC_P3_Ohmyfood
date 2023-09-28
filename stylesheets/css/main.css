@@ -316,6 +316,9 @@ footer a {
 .card--dish:hover::after {
   transform: translateX(-60px);
 }
+.card--dish:hover .card__price {
+  transform: translateX(-60px);
+}
 .card--dish::after {
   content: "";
   width: 60px;
@@ -334,6 +337,7 @@ footer a {
 .card__price {
   font-size: 15px;
   font-weight: bold;
+  transition: transform 300ms ease-in-out;
 }
 
 .card__content {
