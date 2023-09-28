@@ -1,15 +1,27 @@
-@keyframes appearance-image {
-  17%{
-    opacity: 0.18;
+@keyframes progress-bar{
+  0% {
+      transform: scaleX(0);
+      opacity: 1;
   }
-  24%{
-    opacity: 0.4;
+  17% {
+      transform: scaleX(.18);
   }
-  46%{
-    opacity: 0.81;
+  24% {
+      transform: scaleX(.40);
+      animation-timing-function: cubic-bezier(.9,0,.1,1);
+  }
+  46% {
+      transform: scaleX(.81);
+      animation-timing-function: cubic-bezier(.25,0.25,1);
   }
   100% {
-    opacity: 1;
+      transform: scaleX(1);
+  }
+}
+
+@keyframes hidden-progress-bar {
+  100% {
+    opacity: 0;
   }
 }
 
@@ -41,7 +53,7 @@
   animation: anim-in-turn 1000ms forwards;
   @for $i from 1 through 14 {
     &--#{$i} {
-      animation-delay: 1000ms + (200ms * $i); 
+      animation-delay: 1300ms + (200ms * $i); 
     }
   }
 }

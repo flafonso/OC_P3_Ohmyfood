@@ -101,18 +101,29 @@ section {
   font-weight: lighter;
 }
 
-@keyframes appearance-image {
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
   17% {
-    opacity: 0.18;
+    transform: scaleX(0.18);
   }
   24% {
-    opacity: 0.4;
+    transform: scaleX(0.4);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   }
   46% {
-    opacity: 0.81;
+    transform: scaleX(0.81);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
   }
   100% {
-    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+@keyframes hidden-progress-bar {
+  100% {
+    opacity: 0;
   }
 }
 @keyframes appearance-menu {
@@ -140,46 +151,46 @@ section {
   animation: anim-in-turn 1000ms forwards;
 }
 .anim--1 {
-  animation-delay: 1200ms;
+  animation-delay: 1500ms;
 }
 .anim--2 {
-  animation-delay: 1400ms;
+  animation-delay: 1700ms;
 }
 .anim--3 {
-  animation-delay: 1600ms;
+  animation-delay: 1900ms;
 }
 .anim--4 {
-  animation-delay: 1800ms;
+  animation-delay: 2100ms;
 }
 .anim--5 {
-  animation-delay: 2000ms;
+  animation-delay: 2300ms;
 }
 .anim--6 {
-  animation-delay: 2200ms;
+  animation-delay: 2500ms;
 }
 .anim--7 {
-  animation-delay: 2400ms;
+  animation-delay: 2700ms;
 }
 .anim--8 {
-  animation-delay: 2600ms;
+  animation-delay: 2900ms;
 }
 .anim--9 {
-  animation-delay: 2800ms;
+  animation-delay: 3100ms;
 }
 .anim--10 {
-  animation-delay: 3000ms;
+  animation-delay: 3300ms;
 }
 .anim--11 {
-  animation-delay: 3200ms;
+  animation-delay: 3500ms;
 }
 .anim--12 {
-  animation-delay: 3400ms;
+  animation-delay: 3700ms;
 }
 .anim--13 {
-  animation-delay: 3600ms;
+  animation-delay: 3900ms;
 }
 .anim--14 {
-  animation-delay: 3800ms;
+  animation-delay: 4100ms;
 }
 
 header {
@@ -473,6 +484,36 @@ footer a {
     transform: translateX(-60px);
   }
 }
+.load-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  animation: hidden-progress-bar forwards;
+  animation-delay: 1400ms;
+}
+.load-container .progress {
+  width: 35vw;
+  height: 1vw;
+  border: 2px solid #022f40;
+  padding: 0.25rem;
+  margin-bottom: 30px;
+}
+.load-container .progress__bar {
+  height: 100%;
+  background: #15dea5;
+  height: 100%;
+  transform-origin: left;
+  transform: scaleX(0.5);
+  animation: progress-bar 1350ms 150ms both;
+}
+
 .location {
   width: 100%;
   height: 50px;
@@ -662,7 +703,7 @@ footer a {
   border-radius: 40px 40px 0px 0px;
   transform: translateY(70%);
   opacity: 0;
-  animation: appearance-menu 1200ms 200ms ease-out forwards;
+  animation: appearance-menu 1500ms 200ms ease-out forwards;
 }
 .menu__header {
   padding-right: 20px;
