@@ -18,7 +18,7 @@
 </symbol>
 <symbol id="wave">
   <path
-    d="M0,6c100,10,100,-10,200,0c100,10,100,-10,200,0v394h-400Z" fill="url(#my-linear-gradient)"
+    d="M 0 6 c 100 10 100 -10 200 0 c 100 10 100 -10 200 0 v 394 h -400 Z" fill="url('#my-linear-gradient') red"
   />
 </symbol>
 </svg>
