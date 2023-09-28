@@ -60,13 +60,3 @@ body {
     width: clamp(768px, 75vw, 1024px);
   }
 }
-
-.anim {
-  opacity: 0;
-  animation: anim-in-turn 1000ms forwards;
-  @for $i from 1 through 14 {
-    &--#{$i} {
-      animation-delay: 1000ms + (200ms * $i); 
-    }
-  }
-}

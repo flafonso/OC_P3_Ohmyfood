@@ -1,3 +1,18 @@
+@keyframes appearance-image {
+  17%{
+    opacity: 0.18;
+  }
+  24%{
+    opacity: 0.4;
+  }
+  46%{
+    opacity: 0.81;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes appearance-menu {
   17%{
     opacity: 0.18;
@@ -21,3 +36,12 @@
 }
 
 
+.anim {
+  opacity: 0;
+  animation: anim-in-turn 1000ms forwards;
+  @for $i from 1 through 14 {
+    &--#{$i} {
+      animation-delay: 1000ms + (200ms * $i); 
+    }
+  }
+}
