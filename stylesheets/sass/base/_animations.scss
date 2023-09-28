@@ -1,19 +1,13 @@
 @keyframes progress-bar{
-  0% {
-      transform: scaleX(0);
-      opacity: 1;
-  }
-  17% {
-      transform: scaleX(.18);
-  }
-  24% {
-      transform: scaleX(.40);
-      animation-timing-function: cubic-bezier(.9,0,.1,1);
-  }
-  46% {
-      transform: scaleX(.81);
-      animation-timing-function: cubic-bezier(.25,0.25,1);
-  }
+  // 17% {
+  //     transform: scaleX(.18);
+  // }
+  // 24% {
+  //     transform: scaleX(.40);
+  // }
+  // 46% {
+  //     transform: scaleX(.81);
+  // }
   100% {
       transform: scaleX(1);
   }

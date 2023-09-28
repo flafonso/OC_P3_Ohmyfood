@@ -15,16 +15,15 @@
 	.progress {
 		width: 35vw;
 		height: 1vw;
-		border: 2px solid #022f40;
+		border: 2px solid $location-font-color;
 		padding: 0.25rem;
-		margin-bottom: 30px;
 		&__bar {
 			height: 100%;
-			background: #15dea5;
 			height: 100%;
+			background: $secondary-color;
+      transform: scaleX(0);
 			transform-origin: left;
-			transform: scaleX(0.5);
-			animation: progress-bar 1350ms 150ms both;
+			animation: progress-bar 1300ms 200ms cubic-bezier(.9,0,.1,1) both;
 		}
 	}
 }
