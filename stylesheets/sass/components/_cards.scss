@@ -58,11 +58,22 @@
     font-weight: lighter;
   }
   &--dish {
+    width: fit-content;
+    height: 40px;
     gap: unset;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     h3 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
       font-weight: normal;
     }
     p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
       font-size: 15px;
     }
   }

@@ -341,12 +341,23 @@ footer a {
   font-weight: lighter;
 }
 .card__txt--dish {
+  width: fit-content;
+  height: 40px;
   gap: unset;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card__txt--dish h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-weight: normal;
 }
 .card__txt--dish p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 15px;
 }
 
