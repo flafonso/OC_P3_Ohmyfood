@@ -30,7 +30,6 @@ body {
   }
 }
 
-
 .menu {
   padding: 40px 13px;
   display: flex;
@@ -39,6 +38,9 @@ body {
   gap: 40px;
   background-color: $main-bg-color;
   border-radius: 40px 40px 0px 0px;
+  transform: translateY(70%);
+  opacity: 0;
+  animation: appearance-menu 1200ms 200ms ease-out forwards;
   &__header {
     padding-right: 20px;
     display: flex;
@@ -56,5 +58,15 @@ body {
   @include md {
     margin-top: 0;
     width: clamp(768px, 75vw, 1024px);
+  }
+}
+
+.anim {
+  opacity: 0;
+  animation: anim-in-turn 1000ms forwards;
+  @for $i from 1 through 14 {
+    &--#{$i} {
+      animation-delay: 1000ms + (200ms * $i); 
+    }
   }
 }

@@ -101,6 +101,26 @@ section {
   font-weight: lighter;
 }
 
+@keyframes appearance-menu {
+  17% {
+    opacity: 0.18;
+  }
+  24% {
+    opacity: 0.4;
+  }
+  46% {
+    opacity: 0.81;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes anim-in-turn {
+  100% {
+    opacity: 1;
+  }
+}
 header {
   width: 100%;
   height: 63px;
@@ -579,6 +599,9 @@ footer a {
   gap: 40px;
   background-color: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
+  transform: translateY(70%);
+  opacity: 0;
+  animation: appearance-menu 1200ms 200ms ease-out forwards;
 }
 .menu__header {
   padding-right: 20px;
@@ -598,4 +621,51 @@ footer a {
     margin-top: 0;
     width: clamp(768px, 75vw, 1024px);
   }
+}
+
+.anim {
+  opacity: 0;
+  animation: anim-in-turn 1000ms forwards;
+}
+.anim--1 {
+  animation-delay: 1200ms;
+}
+.anim--2 {
+  animation-delay: 1400ms;
+}
+.anim--3 {
+  animation-delay: 1600ms;
+}
+.anim--4 {
+  animation-delay: 1800ms;
+}
+.anim--5 {
+  animation-delay: 2000ms;
+}
+.anim--6 {
+  animation-delay: 2200ms;
+}
+.anim--7 {
+  animation-delay: 2400ms;
+}
+.anim--8 {
+  animation-delay: 2600ms;
+}
+.anim--9 {
+  animation-delay: 2800ms;
+}
+.anim--10 {
+  animation-delay: 3000ms;
+}
+.anim--11 {
+  animation-delay: 3200ms;
+}
+.anim--12 {
+  animation-delay: 3400ms;
+}
+.anim--13 {
+  animation-delay: 3600ms;
+}
+.anim--14 {
+  animation-delay: 3800ms;
 }
