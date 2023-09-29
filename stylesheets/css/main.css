@@ -330,11 +330,13 @@ footer a {
   transform: translateY(0);
 }
 .btn__like .heart-stroke {
+  position: relative;
   width: 22px;
   height: 21px;
   stroke: black;
   stroke-width: 2px;
   fill: transparent;
+  z-index: 1;
 }
 .btn__back {
   position: absolute;
