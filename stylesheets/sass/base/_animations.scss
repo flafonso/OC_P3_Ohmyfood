@@ -1,13 +1,4 @@
 @keyframes progress-bar{
-  // 17% {
-  //     transform: scaleX(.18);
-  // }
-  // 24% {
-  //     transform: scaleX(.40);
-  // }
-  // 46% {
-  //     transform: scaleX(.81);
-  // }
   100% {
       transform: scaleX(1);
   }
@@ -41,7 +32,6 @@
   }
 }
 
-
 .anim {
   opacity: 0;
   animation: anim-in-turn 1000ms forwards;
@@ -51,3 +41,4 @@
     }
   }
 }
+

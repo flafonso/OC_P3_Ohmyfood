@@ -30,10 +30,10 @@
     overflow: hidden;
     &:hover::after {
       transform: translateX(-60px);
-      // animation: check-dish 300ms ease-in-out forwards;
     }
     &:hover .card__price {
       transform: translateX(-60px);
+      margin-left: 60px;
     }
     &::after {
       content: "";
@@ -104,11 +104,3 @@
 }
 
 
-@keyframes check-dish {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
