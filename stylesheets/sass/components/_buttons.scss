@@ -67,7 +67,7 @@
         transition: transform 1.2s cubic-bezier(.2, .6, .8, .4);
       }
       &:checked + .fill {
-        transform: translateY(0);
+        transform: translateY(-10%);
       }
     }
     .heart-stroke {
@@ -93,13 +93,9 @@
 }
 
 .wave {
-  // color:transparent;
-  // background: linear-gradient(
-  //   rgba(147, 86, 220, 1) 5%,
-  //   rgba(255, 121, 218, 1) 55%
-  // );
-  use {
-    animation: wave-movements 450ms linear infinite;
+  img {
+    width: 44px;
+    animation: wave-movements 450ms ease-in-out infinite;
   }
 }
 

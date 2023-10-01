@@ -327,7 +327,7 @@ footer a {
   transition: transform 1.2s cubic-bezier(0.2, 0.6, 0.8, 0.4);
 }
 .btn__like--tick:checked + .fill {
-  transform: translateY(0);
+  transform: translateY(-10%);
 }
 .btn__like .heart-stroke {
   position: relative;
@@ -348,8 +348,9 @@ footer a {
   height: 16px;
 }
 
-.wave use {
-  animation: wave-movements 450ms linear infinite;
+.wave img {
+  width: 44px;
+  animation: wave-movements 450ms ease-in-out infinite;
 }
 
 @keyframes wave-movements {
@@ -366,7 +367,7 @@ footer a {
   border-radius: 15px;
   position: relative;
 }
-.card img {
+.card__background {
   width: 100%;
   height: 170px;
   object-fit: cover;
