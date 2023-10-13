@@ -42,3 +42,18 @@
   }
 }
 
+.wave {
+  img {
+    width: 44px;
+    animation: wave-movements 450ms ease-in-out infinite;
+  }
+}
+
+@keyframes wave-movements {
+  0% {
+     transform: translateX(0);
+  }
+  100% {
+     transform: translateX(-50%);
+  }
+}
