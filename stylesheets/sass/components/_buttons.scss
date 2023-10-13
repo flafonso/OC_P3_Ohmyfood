@@ -69,6 +69,9 @@
       &:checked + .fill {
         transform: translateY(-10%);
       }
+      &:checked + .fill + .heart-stroke {
+        stroke: none;
+      }
     }
     .heart-stroke {
       position: relative;

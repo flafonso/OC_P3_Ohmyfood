@@ -329,6 +329,9 @@ footer a {
 .btn__like--tick:checked + .fill {
   transform: translateY(-10%);
 }
+.btn__like--tick:checked + .fill + .heart-stroke {
+  stroke: none;
+}
 .btn__like .heart-stroke {
   position: relative;
   width: 22px;
