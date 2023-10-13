@@ -53,3 +53,19 @@ section {
     }
   }
 }
+
+.svg__heart-clip {
+  width: 22px;
+  height: 21px;
+  opacity: 0;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  #heart-clip {
+    path {
+      width: 22px;
+      height: 21px;
+    }
+  }
+}
